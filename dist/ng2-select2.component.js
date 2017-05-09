@@ -91,7 +91,6 @@ var Select2Component = Select2Component_1 = (function () {
             this.setElementValue(this.value);
         }
         this.element.on('select2:select', function () {
-	    console.log(_this.element);
             _this.onChange(_this.element.val());
             _this.onTouched();
             _this.valueChanged.emit({
